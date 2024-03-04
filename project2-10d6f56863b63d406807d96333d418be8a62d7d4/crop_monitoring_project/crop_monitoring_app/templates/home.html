@@ -1,0 +1,45 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('/static/farmer1.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .login-button, .signup-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #06da7b;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <p style="font-size: 50px; color: white;">real-time monitoring of crop prices</p>
+        <p></p>
+        <a href="{% url 'login' %}" class="login-button">Login</a>
+        <a href="{% url 'signup' %}" class="signup-button">Sign Up</a>
+    </div>
+</body>
+</html>
